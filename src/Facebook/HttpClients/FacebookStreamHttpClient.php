@@ -57,8 +57,6 @@ class FacebookStreamHttpClient implements FacebookHttpClientInterface
             'ssl' => [
                 'verify_peer' => true,
                 'verify_peer_name' => true,
-                'allow_self_signed' => true, // All root certificates are self-signed
-                'cafile' => __DIR__ . '/certs/DigiCertHighAssuranceEVRootCA.pem',
             ],
         ];
 
